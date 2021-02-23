@@ -31,8 +31,3 @@ def f14(n):
     else:
         return math.tan(f14(n - 1)) + math.sin(f14(n - 2)) + 72
 
-
-print(format(f11(-68, 0, -1), ".2e"))
-print(format(f12(227), ".2e"))
-print(format(f13(97), ".2e"))
-print(format(f14(2), ".2e"))
