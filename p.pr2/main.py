@@ -28,7 +28,7 @@ def f23(table):
     l = []
     for row in table:
         s.add(tuple(row))
-    s.discard((None, None, None, None))
+    s.discard((None, None, None))
     for row in s:
         l.append(list(row))
     for row in l:
@@ -40,12 +40,3 @@ def f23(table):
         row[2] = str('{:.0%}'.format(float(row[2])))
     l.sort()
     return l
-
-
-print(f23([
-    ['Тимур Т. Лелефий', 'Y', '0.187'],
-    ['Ринат А. Баций', 'Y', '0.422'],
-    ['Тимур Т. Лелефий', 'Y', '0.187'],
-    [None, None, None, None],
-    ['Кирилл З. Детобиди', 'Y', '0.703']
-]))
